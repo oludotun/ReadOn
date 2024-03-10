@@ -4,6 +4,7 @@ import Head from "next/head";
 import Layout from "../../components/Layout";
 import PeopleList from "../../components/PeopleList";
 import authorsData from "../../data/authors";
+import ProductListTitle from "@/components/ProductListTitle";
 
 export default function Authors() {
     const authors = authorsData.authors;
@@ -16,7 +17,10 @@ export default function Authors() {
                     content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
                 ></meta>
             </Head>
-            <div className="mt-14">
+            <div className="mt-16">
+                <div className="py-4">
+                    <ProductListTitle title={"Our Authors"} />
+                </div>
                 <PeopleList people={authors} />
             </div>
         </Layout>
