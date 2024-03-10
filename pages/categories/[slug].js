@@ -72,6 +72,6 @@ export async function getStaticProps({ params }) {
     return {
         props: { products, slug, subcategories },
         // Incremental Static Regeneration
-        revalidate: 10, // In seconds
+        // revalidate: 10, // In seconds
     };
 }

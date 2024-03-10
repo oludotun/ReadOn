@@ -1,5 +1,4 @@
 import * as React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
@@ -111,15 +110,12 @@ export default function Header() {
                                                                     className="group relative text-sm"
                                                                 >
                                                                     <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                                                        <Image
+                                                                        <img
                                                                             src={
                                                                                 item.imageSrc
                                                                             }
                                                                             alt={
                                                                                 item.imageAlt
-                                                                            }
-                                                                            fill={
-                                                                                true
                                                                             }
                                                                             className="object-cover object-center"
                                                                         />
@@ -292,11 +288,10 @@ export default function Header() {
                                     <span className="sr-only">
                                         Your Company
                                     </span>
-                                    <Image
+                                    <img
                                         src="/images/logo.png"
                                         alt="ReadOn Logo"
-                                        height={50}
-                                        width={57}
+                                        className="h-14"
                                     />
                                 </Link>
                             </div>
@@ -355,7 +350,7 @@ export default function Header() {
                                                                                         className="group relative text-base sm:text-sm"
                                                                                     >
                                                                                         <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                                                                            <Image
+                                                                                            <img
                                                                                                 src={
                                                                                                     item.imageSrc
                                                                                                 }
@@ -363,9 +358,6 @@ export default function Header() {
                                                                                                     item.imageAlt
                                                                                                 }
                                                                                                 className="object-cover object-center"
-                                                                                                fill={
-                                                                                                    true
-                                                                                                }
                                                                                             />
                                                                                         </div>
                                                                                         <Link
