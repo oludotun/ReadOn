@@ -6,13 +6,12 @@ import ProductList from "@/components/ProductList";
 
 export default function CategoryList({ products, slug, subcategories }) {
     const subcategory = subcategories.find((item) => item.slug === slug);
+    const title = `ReadOn Bookstore | ${subcategory.subcategory} Category`;
 
     return (
         <Layout>
             <Head>
-                <title>
-                    ReadOn Bookstore | {subcategory.subcategory + " Category"}{" "}
-                </title>
+                <title>{title}</title>
                 <meta
                     name="description"
                     content="Lorem ipsum dolor sit amet, consectetuer adipiscing"

@@ -17,11 +17,12 @@ export default function ProductDetail({ product }) {
     ];
     const [activeImage, setActiveImage] = useState(images[0]);
     const [quantity, setQuantity] = useState(1);
+    const title = `ReadOn Bookstore | ${product.name}`;
 
     return (
         <Layout>
             <Head>
-                <title>ReadOn Bookstore | {product.name}</title>
+                <title>{title}</title>
                 <meta
                     name="description"
                     content="Lorem ipsum dolor sit amet, consectetuer adipiscing"

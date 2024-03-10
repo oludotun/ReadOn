@@ -5,10 +5,11 @@ import ProductListTitle from "@/components/ProductListTitle";
 import ProductList from "@/components/ProductList";
 
 export default function AuthorBooks({ products, author }) {
+    const title = `ReadOn Bookstore | ${author.name}'s Books`;
     return (
         <Layout>
             <Head>
-                <title>ReadOn Bookstore | {author.name + "'s Books"}</title>
+                <title>{title}</title>
                 <meta
                     name="description"
                     content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
