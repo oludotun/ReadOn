@@ -13,6 +13,10 @@ export default function Page({ products }) {
         <Layout>
             <Head>
                 <title>ReadOn Bookstore | Home Page</title>
+                <meta
+                    name="description"
+                    content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
+                ></meta>
             </Head>
             <div className="mt-14">
                 <Hero />

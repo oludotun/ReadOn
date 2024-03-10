@@ -9,6 +9,10 @@ export default function AuthorBooks({ products, author }) {
         <Layout>
             <Head>
                 <title>ReadOn Bookstore | {author.name + "'s Books"}</title>
+                <meta
+                    name="description"
+                    content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
+                ></meta>
             </Head>
             <div className="mt-16">
                 <ProductListTitle title={author.name + "'s Books"} />

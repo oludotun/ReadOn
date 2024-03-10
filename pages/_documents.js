@@ -5,6 +5,7 @@ export default class MyDocument extends Document {
         return (
             <Html className="h-full bg-white">
                 <Head>
+                    <meta charset="UTF-8" />
                     <meta
                         property="og:url"
                         content="http://up2271435.students.portsmouthuni.ac.uk/wp1"
@@ -20,7 +21,14 @@ export default class MyDocument extends Document {
                         name="keywords"
                         content="books, online bookstore, book store"
                     />
+
+                    <meta name="author" content="UP2271435" />
+
                     <link rel="icon" href="/favicon.png" />
+                    <meta
+                        name="viewport"
+                        content="width=device-width, initial-scale=1.0"
+                    />
                 </Head>
                 <body className="h-full">
                     <Main />

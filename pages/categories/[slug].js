@@ -13,6 +13,10 @@ export default function CategoryList({ products, slug, subcategories }) {
                 <title>
                     ReadOn Bookstore | {subcategory.subcategory + " Category"}{" "}
                 </title>
+                <meta
+                    name="description"
+                    content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
+                ></meta>
             </Head>
             <div className="mt-16">
                 <ProductListTitle title={subcategory.subcategory} />

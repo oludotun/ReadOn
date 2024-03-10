@@ -11,6 +11,10 @@ export default function Authors() {
         <Layout>
             <Head>
                 <title>ReadOn Bookstore | Authors Page</title>
+                <meta
+                    name="description"
+                    content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
+                ></meta>
             </Head>
             <div className="mt-14">
                 <PeopleList people={authors} />

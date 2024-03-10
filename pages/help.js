@@ -6,6 +6,10 @@ export default function Help({ products }) {
         <Layout>
             <Head>
                 <title>ReadOn Bookstore | Help & Support Page</title>
+                <meta
+                    name="description"
+                    content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
+                ></meta>
             </Head>
             <div className="mt-16">
                 <h1 className="text-3xl font-semibold">Policy</h1>

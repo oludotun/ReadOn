@@ -12,6 +12,10 @@ export default function ContactUs() {
         <Layout>
             <Head>
                 <title>ReadOn Bookstore | Contact Page</title>
+                <meta
+                    name="description"
+                    content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
+                ></meta>
             </Head>
             <div className="mt-16">
                 <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2">
