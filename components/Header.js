@@ -491,7 +491,7 @@ export default function Header() {
                                 <div className="flex lg:ml-6">
                                     <Link
                                         href="#"
-                                        className="p-2 text-gray-400 hover:text-gray-500"
+                                        className="p-2 text-gray-700 hover:text-gray-800"
                                     >
                                         <span className="sr-only">Search</span>
                                         <MagnifyingGlassIcon
@@ -505,7 +505,7 @@ export default function Header() {
                                 <div className="flex lg:ml-6">
                                     <Link
                                         href="/help"
-                                        className="flex items-center text-gray-400 hover:text-gray-800"
+                                        className="flex items-center text-gray-700 hover:text-gray-8000"
                                     >
                                         <span className="sr-only">
                                             Help & Support
@@ -527,7 +527,7 @@ export default function Header() {
                                         className="group -m-2 flex items-center p-2"
                                     >
                                         <ShoppingCartIcon
-                                            className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+                                            className="h-6 w-6 flex-shrink-0 text-gray-700 group-hover:text-gray-800"
                                             aria-hidden="true"
                                         />
                                         <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">

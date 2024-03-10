@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
                         {children}
                     </div>
                 </main>
-                <div className="bg-cyan-600">
+                <div className="bg-cyan-700">
                     <div className="antialiased text-white font-sans max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                         <div className="container mx-auto">
                             <div className="">
@@ -190,9 +190,9 @@ const Layout = ({ children }) => {
                         </div>
                     </div>
                 </div>
-                <footer className="bg-cyan-700 border-t">
+                <footer className="bg-cyan-800 border-t">
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-                        <div className="capitalize text-gray-200 py-4 text-center text-xs">
+                        <div className="capitalize text-gray-100 py-4 text-center text-xs">
                             &copy; {new Date().getFullYear()}{" "}
                             {data.site.siteMetadata?.title} All Rights Reserved.
                         </div>
