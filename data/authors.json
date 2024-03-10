@@ -1,0 +1,46 @@
+{
+    "authors": [
+        {
+            "name": "Teddy Joseph",
+            "slug": "teddy-joseph",
+            "imageSrc": "/images/authors/teddy-joseph.jpg",
+            "affiliation": "Dean of Goizueta Business School",
+            "totalPublication": 3
+        },
+        {
+            "name": "Andrew Dick",
+            "slug": "andrew-dick",
+            "imageSrc": "/images/authors/andrew-dick.jpg",
+            "affiliation": "Dean of Goizueta Business School",
+            "totalPublication": 4
+        },
+        {
+            "name": "Christina Morillo",
+            "slug": "christina-morillo",
+            "imageSrc": "/images/authors/christina-morillo.jpg",
+            "affiliation": "Dean of Goizueta Business School",
+            "totalPublication": 6
+        },
+        {
+            "name": "Cottonbro Studio",
+            "slug": "cottonbro-studio",
+            "imageSrc": "/images/authors/cottonbro-studio.jpg",
+            "affiliation": "Dean of Goizueta Business School",
+            "totalPublication": 7
+        },
+        {
+            "name": "Dziana Hasanbekava",
+            "slug": "dziana-hasanbekava",
+            "imageSrc": "/images/authors/dziana-hasanbekava.jpg",
+            "affiliation": "Dean of Goizueta Business School",
+            "totalPublication": 12
+        },
+        {
+            "name": "Godisable Jacob",
+            "slug": "godisable-jacob",
+            "imageSrc": "/images/authors/godisable-jacob.jpg",
+            "affiliation": "Dean of Goizueta Business School",
+            "totalPublication": 1
+        }
+    ]
+}

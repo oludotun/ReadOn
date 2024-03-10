@@ -1,0 +1,107 @@
+{
+    "categories": [
+        {
+            "id": "categories",
+            "name": "Categories",
+            "featured": [
+                {
+                    "name": "Industrial Design",
+                    "href": "#",
+                    "slug": "industrial-design",
+                    "imageSrc": "/images/industrial-design.jpg",
+                    "imageAlt": "Industrial Design Book Cover"
+                },
+                {
+                    "name": "Create your own business",
+                    "slug": "create-your-own-business",
+                    "href": "#",
+                    "imageSrc": "/images/create-your-own-business.jpg",
+                    "imageAlt": "Create your own business Book Cover"
+                }
+            ],
+            "sections": [
+                {
+                    "id": "fiction",
+                    "name": "Fiction",
+                    "items": [
+                        {
+                            "name": "Literary Fiction",
+                            "href": "#",
+                            "slug": "literary-fiction"
+                        },
+                        {
+                            "name": "Mystery & Thriller",
+                            "href": "#",
+                            "slug": "mystery-and-thriller"
+                        },
+                        {
+                            "name": "Science Fiction & Fantasy",
+                            "href": "#",
+                            "slug": "science-fiction-and-fantasy"
+                        },
+                        {
+                            "name": "Romance",
+                            "href": "#",
+                            "slug": "romance"
+                        },
+                        {
+                            "name": "Historical Fiction",
+                            "href": "#",
+                            "slug": "historical-fiction"
+                        }
+                    ]
+                },
+                {
+                    "id": "nonFiction",
+                    "name": "Non-Fiction",
+                    "items": [
+                        {
+                            "name": "Biography & Memoir",
+                            "href": "#",
+                            "slug": "biography-and-memoir"
+                        },
+                        { "name": "History", "href": "#", "slug": "history" },
+                        {
+                            "name": "Self-Help & Personal Development",
+                            "href": "#",
+                            "slug": "self-help-and-personal-development"
+                        },
+                        { "name": "Travel", "href": "#", "slug": "travel" },
+                        {
+                            "name": "Cooking & Food",
+                            "href": "#",
+                            "slug": "cooking-and-food"
+                        },
+                        {
+                            "name": "Textbooks & Educational",
+                            "href": "#",
+                            "slug": "textbooks-and-educational"
+                        }
+                    ]
+                },
+                {
+                    "id": "format",
+                    "name": "Format",
+                    "items": [
+                        {
+                            "name": "E-Books",
+                            "href": "#",
+                            "slug": "e-books"
+                        },
+                        {
+                            "name": "Paper Books",
+                            "href": "#",
+                            "slug": "paper-and-books"
+                        },
+                        {
+                            "name": "Audio Books",
+                            "href": "#",
+                            "slug": "audio-and-books"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "pages": [{ "name": "Authors", "href": "/authors" }]
+}
