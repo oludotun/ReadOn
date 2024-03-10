@@ -289,7 +289,7 @@ export default function Header() {
                                         Your Company
                                     </span>
                                     <img
-                                        src="/images/logo.png"
+                                        src="/wp1/images/logo.png"
                                         alt="ReadOn Logo"
                                         className="h-14"
                                     />

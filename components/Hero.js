@@ -27,37 +27,14 @@ export default function Hero() {
                                         <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                                             <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                                                 <img
-                                                    src="/images/the-long-firm.jpg"
+                                                    src="/wp1/images/the-long-firm.jpg"
                                                     alt="Book Cover"
                                                     className="h-full w-full object-cover object-center"
                                                 />
                                             </div>
                                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                 <img
-                                                    src="/images/midnight-express.jpg"
-                                                    alt="Book Cover"
-                                                    className="h-full w-full object-cover object-center"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                                            <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                <img
-                                                    src="/images/mr-pink.jpg"
-                                                    alt="Book Cover"
-                                                    className="h-full w-full object-cover object-center"
-                                                />
-                                            </div>
-                                            <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                <img
-                                                    src="/images/essential-habits.png"
-                                                    alt="Book Cover"
-                                                    className="h-full w-full object-cover object-center"
-                                                />
-                                            </div>
-                                            <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                <img
-                                                    src="/images/the-future-of-health-care.jpg"
+                                                    src="/wp1/images/midnight-express.jpg"
                                                     alt="Book Cover"
                                                     className="h-full w-full object-cover object-center"
                                                 />
@@ -66,14 +43,37 @@ export default function Hero() {
                                         <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                 <img
-                                                    src="/images/love-to-the-universe.jpg"
+                                                    src="/wp1/images/mr-pink.jpg"
                                                     alt="Book Cover"
                                                     className="h-full w-full object-cover object-center"
                                                 />
                                             </div>
                                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                 <img
-                                                    src="/images/unfear.jpg"
+                                                    src="/wp1/images/essential-habits.png"
+                                                    alt="Book Cover"
+                                                    className="h-full w-full object-cover object-center"
+                                                />
+                                            </div>
+                                            <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                <img
+                                                    src="/wp1/images/the-future-of-health-care.jpg"
+                                                    alt="Book Cover"
+                                                    className="h-full w-full object-cover object-center"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                            <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                <img
+                                                    src="/wp1/images/love-to-the-universe.jpg"
+                                                    alt="Book Cover"
+                                                    className="h-full w-full object-cover object-center"
+                                                />
+                                            </div>
+                                            <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                <img
+                                                    src="/wp1/images/unfear.jpg"
                                                     alt="Book Cover"
                                                     className="h-full w-full object-cover object-center"
                                                 />

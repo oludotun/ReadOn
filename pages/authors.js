@@ -1,9 +1,9 @@
 import * as React from "react";
 import Head from "next/head";
 
-import Layout from "../../components/Layout";
-import PeopleList from "../../components/PeopleList";
-import authorsData from "../../data/authors";
+import Layout from "../components/Layout";
+import PeopleList from "../components/PeopleList";
+import authorsData from "../data/authors";
 import ProductListTitle from "@/components/ProductListTitle";
 
 export default function Authors() {
