@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+import Head from "next/head";
 import Layout from "@/components/Layout";
 import ProductListTitle from "@/components/ProductListTitle";
 import ProductList from "@/components/ProductList";
 
-export default function AuthorBooks({ products, slug, author }) {
+export default function AuthorBooks({ products, author }) {
     return (
         <Layout>
+            <Head>
+                <title>ReadOn Bookstore | {author.name + "'s Books"}</title>
+            </Head>
             <div className="mt-16">
                 <ProductListTitle title={author.name + "'s Books"} />
                 <ProductList products={products} />

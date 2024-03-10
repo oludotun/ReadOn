@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Layout from "../components/Layout";
 import Hero from "@/components/Hero";
 import ProductListTitle from "@/components/ProductListTitle";
@@ -10,6 +11,9 @@ export default function Page({ products }) {
 
     return (
         <Layout>
+            <Head>
+                <title>ReadOn Bookstore | Home Page</title>
+            </Head>
             <div className="mt-14">
                 <Hero />
                 <ProductListTitle title="Today's Top Deals" />

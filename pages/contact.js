@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Layout from "../components/Layout";
 import {
     MapPinIcon,
@@ -9,6 +10,9 @@ import Link from "next/link";
 export default function ContactUs() {
     return (
         <Layout>
+            <Head>
+                <title>ReadOn Bookstore | Contact Page</title>
+            </Head>
             <div className="mt-16">
                 <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2">
                     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">

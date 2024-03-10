@@ -1,8 +1,12 @@
+import Head from "next/head";
 import Layout from "../components/Layout";
 
 export default function Help({ products }) {
     return (
         <Layout>
+            <Head>
+                <title>ReadOn Bookstore | Help & Support Page</title>
+            </Head>
             <div className="mt-16">
                 <h1 className="text-3xl font-semibold">Policy</h1>
                 <p className="text-gray-800 py-4">

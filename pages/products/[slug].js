@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React, { useState } from "react";
 import { StarIcon } from "@heroicons/react/20/solid";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
@@ -17,18 +18,11 @@ export default function ProductDetail({ product }) {
     const [activeImage, setActiveImage] = useState(images[0]);
     const [quantity, setQuantity] = useState(1);
 
-    if (!product) {
-        return (
-            <div>
-                <Layout>
-                    <div className="mt-16"></div>
-                </Layout>
-            </div>
-        );
-    }
-
     return (
         <Layout>
+            <Head>
+                <title>ReadOn Bookstore | {product.name}</title>
+            </Head>
             <div className="mt-16">
                 <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2">
                     <div>

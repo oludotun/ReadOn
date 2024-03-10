@@ -1,9 +1,13 @@
+import Head from "next/head";
 import Layout from "../components/Layout";
 import Link from "next/link";
 
 export default function Signup() {
     return (
         <Layout>
+            <Head>
+                <title>ReadOn Bookstore | Signup Page</title>
+            </Head>
             <div className="mt-16 flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img

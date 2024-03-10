@@ -1,22 +1,19 @@
-import React, { useState } from "react";
+import Head from "next/head";
+import React from "react";
 import Layout from "@/components/Layout";
 import ProductListTitle from "@/components/ProductListTitle";
 import ProductList from "@/components/ProductList";
 
 export default function CategoryList({ products, slug, subcategories }) {
     const subcategory = subcategories.find((item) => item.slug === slug);
-    if (!products) {
-        return (
-            <div>
-                <Layout>
-                    <div className=""></div>
-                </Layout>
-            </div>
-        );
-    }
 
     return (
         <Layout>
+            <Head>
+                <title>
+                    ReadOn Bookstore | {subcategory.subcategory + " Category"}{" "}
+                </title>
+            </Head>
             <div className="mt-16">
                 <ProductListTitle title={subcategory.subcategory} />
                 <ProductList products={products} />
