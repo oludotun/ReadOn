@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export default function PeopleList({ people }) {
     return (
+        // Component for listing authors
         <div className="bg-white">
             <div>
                 <ul className="divide-y divide-gray-100">

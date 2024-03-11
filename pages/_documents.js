@@ -3,6 +3,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 export default class MyDocument extends Document {
     render() {
         return (
+            // Page html structure and some general metadata
             <Html className="h-full bg-white" lang="en">
                 <Head>
                     <meta charset="UTF-8" />

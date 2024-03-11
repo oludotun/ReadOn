@@ -12,6 +12,7 @@ export default function Page({ products }) {
     return (
         <Layout>
             <Head>
+                {/* Page metadata (title and description) */}
                 <title>ReadOn Bookstore | Home Page</title>
                 <meta
                     name="description"
@@ -19,6 +20,7 @@ export default function Page({ products }) {
                 ></meta>
             </Head>
             <div className="mt-14">
+                {/* Home page with Hero and product lists */}
                 <Hero />
                 <ProductListTitle title="Today's Top Deals" />
                 <ProductList products={topDeals} />
@@ -31,6 +33,7 @@ export default function Page({ products }) {
     );
 }
 
+// NextJs function for fetching data required to generate pages
 export async function getStaticProps() {
     const products = require("../data/products.json");
 

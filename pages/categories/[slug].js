@@ -11,12 +11,14 @@ export default function CategoryList({ products, slug, subcategories }) {
     return (
         <Layout>
             <Head>
+                {/* Page metadata (title and description) */}
                 <title>{title}</title>
                 <meta
                     name="description"
                     content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
                 ></meta>
             </Head>
+            {/* List of books in the selected category */}
             <div className="mt-16">
                 <ProductListTitle title={subcategory.subcategory} />
                 <ProductList products={products} />
@@ -25,6 +27,7 @@ export default function CategoryList({ products, slug, subcategories }) {
     );
 }
 
+// NextJs function for generating static pages
 export async function getStaticPaths() {
     const navData = require("../../data/navigation.json");
 
@@ -44,6 +47,7 @@ export async function getStaticPaths() {
     };
 }
 
+// NextJs function for fetching data required to generate pages
 export async function getStaticProps({ params }) {
     const slug = params.slug;
     const productData = require("../../data/products.json");

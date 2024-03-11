@@ -15,14 +15,21 @@ const Layout = ({ children }) => {
     };
 
     return (
+        // Layout for the entire site.
+        // Comprises of components common to all pages
+        // E.g. footer, navbar, etc.
         <>
+            {/* Navigation bar */}
             <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+
             <div>
+                {/* Main body of the page is injected here*/}
                 <main>
                     <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
                         {children}
                     </div>
                 </main>
+                {/* Footer section starts here */}
                 <div className="bg-cyan-700">
                     <div className="antialiased text-white font-sans max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                         <div className="container mx-auto">
@@ -190,6 +197,7 @@ const Layout = ({ children }) => {
                         </div>
                     </div>
                 </div>
+                {/* Footer copyright section */}
                 <footer className="bg-cyan-800 border-t">
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                         <div className="capitalize text-gray-100 py-4 text-center text-xs">
@@ -198,6 +206,7 @@ const Layout = ({ children }) => {
                         </div>
                     </div>
                 </footer>
+                {/* Footer ends here */}
             </div>
         </>
     );

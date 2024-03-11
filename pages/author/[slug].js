@@ -9,12 +9,14 @@ export default function AuthorBooks({ products, author }) {
     return (
         <Layout>
             <Head>
+                {/* Page metadata (title and description) */}
                 <title>{title}</title>
                 <meta
                     name="description"
                     content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
                 ></meta>
             </Head>
+            {/* Author's page displaying list of books by the author */}
             <div className="mt-16">
                 <ProductListTitle title={author.name + "'s Books"} />
                 <ProductList products={products} />
@@ -23,6 +25,7 @@ export default function AuthorBooks({ products, author }) {
     );
 }
 
+// NextJs function for generating static pages
 export async function getStaticPaths() {
     const authors = require("../../data/authors.json");
     const paths = authors.authors.map((author) => ({
@@ -34,6 +37,7 @@ export async function getStaticPaths() {
     };
 }
 
+// NextJs function for fetching data required to generate pages
 export async function getStaticProps({ params }) {
     const slug = params.slug;
     const productData = require("../../data/products.json");

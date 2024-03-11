@@ -11,14 +11,17 @@ export default function ContactUs() {
     return (
         <Layout>
             <Head>
+                {/* Page metadata (title and description) */}
                 <title>ReadOn Bookstore | Contact Page</title>
                 <meta
                     name="description"
                     content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
                 ></meta>
             </Head>
+            {/* Contact page */}
             <div className="mt-16">
                 <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2">
+                    {/* Contact details */}
                     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                         <h1 className="text-2xl">Contact Details</h1>
                         <div className="flex items-center my-4">
@@ -37,6 +40,7 @@ export default function ContactUs() {
                             <span>user@example.com</span>
                         </div>
                     </div>
+                    {/* Contact form */}
                     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                             <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">

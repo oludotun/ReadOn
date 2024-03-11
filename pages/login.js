@@ -6,13 +6,16 @@ export default function Login() {
     return (
         <Layout>
             <Head>
+                {/* Page metadata (title and description) */}
                 <title>ReadOn Bookstore | Login Page</title>
                 <meta
                     name="description"
                     content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
                 ></meta>
             </Head>
+            {/* Login Page */}
             <div className="mt-16 flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+                {/* Top image */}
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img
                         className="mx-auto h-20 w-auto"
@@ -23,7 +26,7 @@ export default function Login() {
                         Sign in to your account
                     </h2>
                 </div>
-
+                {/* Login form */}
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                     <form className="space-y-6" action="#" method="POST">
                         <div>
@@ -96,6 +99,7 @@ export default function Login() {
                         </Link>
                     </p>
                 </div>
+                {/* End of login form */}
             </div>
         </Layout>
     );

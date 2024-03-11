@@ -21,7 +21,7 @@ export default function Header() {
 
     return (
         <div className="bg-white">
-            {/* Mobile menu */}
+            {/* Mobile Navigation Menu */}
             <Transition.Root show={open} as={Fragment}>
                 <Dialog
                     as="div"
@@ -68,7 +68,7 @@ export default function Header() {
                                     </button>
                                 </div>
 
-                                {/* Links */}
+                                {/* Mobile Navigation Links */}
                                 <Tab.Group as="div" className="mt-2">
                                     <div className="border-b border-gray-200">
                                         <Tab.List className="-mb-px flex space-x-8 px-4">
@@ -93,6 +93,7 @@ export default function Header() {
                                             )}
                                         </Tab.List>
                                     </div>
+                                    {/* Feature Books in Mobile Navigation Panel */}
                                     <Tab.Panels as={Fragment}>
                                         {navigation.categories.map(
                                             (category) => (
@@ -195,6 +196,7 @@ export default function Header() {
                                             )
                                         )}
                                     </Tab.Panels>
+                                    {/* End of featured books */}
                                 </Tab.Group>
 
                                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
@@ -249,19 +251,21 @@ export default function Header() {
                                         </span>
                                     </Link>
                                 </div>
+                                {/* End of mobile navigation links */}
                             </Dialog.Panel>
                         </Transition.Child>
                     </div>
                 </Dialog>
             </Transition.Root>
+            {/* End of Mobile Navigation Menu */}
 
             {/* Desktop Nav Menu */}
             <header className="fixed top-0 w-full bg-white z-30 border-b border-gray-200">
-                {/* <header className="relative w-full bg-white z-30 border-b border-gray-200"> */}
+                {/* Header Information bar */}
                 <p className="flex h-10 items-center justify-center bg-primary px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
                     Excepteur sint occaecat cupidatat non proident,
                 </p>
-
+                {/* Navigation Menu starts here */}
                 <nav
                     aria-label="Top"
                     className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
@@ -296,9 +300,10 @@ export default function Header() {
                                 </Link>
                             </div>
 
-                            {/* Flyout menus */}
+                            {/* Flyout menus and navigation links on the left side */}
                             <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
                                 <div className="flex h-full space-x-8">
+                                    {/* Categories */}
                                     {navigation.categories.map((category) => (
                                         <Popover
                                             key={category.name}
@@ -446,7 +451,9 @@ export default function Header() {
                                             )}
                                         </Popover>
                                     ))}
+                                    {/* End of Categories */}
 
+                                    {/* Other Navigation links without Flyout */}
                                     {navigation.pages.map((page) => (
                                         <Link
                                             key={page.name}
@@ -459,7 +466,9 @@ export default function Header() {
                                 </div>
                             </Popover.Group>
 
+                            {/* Navigation links on the right side */}
                             <div className="ml-auto flex items-center">
+                                {/* Sign in or Sign up */}
                                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                                     <Link
                                         href="/login"

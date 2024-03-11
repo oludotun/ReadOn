@@ -6,6 +6,7 @@ export default function Signup() {
     return (
         <Layout>
             <Head>
+                {/* Page metadata (title and description) */}
                 <title>ReadOn Bookstore | Signup Page</title>
                 <meta
                     name="description"
@@ -13,6 +14,7 @@ export default function Signup() {
                 ></meta>
             </Head>
             <div className="mt-16 flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+                {/* Top image */}
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img
                         className="mx-auto h-20 w-auto"
@@ -23,7 +25,7 @@ export default function Signup() {
                         Create an account
                     </h2>
                 </div>
-
+                {/* Signup form */}
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                     <form className="space-y-6" action="#" method="POST">
                         <div>
@@ -130,6 +132,7 @@ export default function Signup() {
                         </Link>
                     </p>
                 </div>
+                {/* End of signup form */}
             </div>
         </Layout>
     );

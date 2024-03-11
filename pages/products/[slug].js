@@ -22,20 +22,24 @@ export default function ProductDetail({ product }) {
     return (
         <Layout>
             <Head>
+                {/* Page metadata (title and description) */}
                 <title>{title}</title>
                 <meta
                     name="description"
                     content="Lorem ipsum dolor sit amet, consectetuer adipiscing"
                 ></meta>
             </Head>
+            {/* Product page showing book detailed information */}
             <div className="mt-16">
                 <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2">
                     <div>
+                        {/* Selected product image */}
                         <img
                             src={activeImage.src}
                             alt={product.imageAlt}
                             className="w-full h-[32rem] aspect-square object-cover rounded-xl"
                         />
+                        {/* List of all images for the product */}
                         <div className="flex flex-row justify-between h-24 py-4 mb-6">
                             {images.map((image) => (
                                 <img
@@ -59,6 +63,7 @@ export default function ProductDetail({ product }) {
                                 {product.name}
                             </h1>
                         </div>
+                        {/* Product summary */}
                         <div className="pt-6">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetuer
@@ -106,6 +111,7 @@ export default function ProductDetail({ product }) {
                                 </a>
                             </div>
                         </div>
+                        {/* Product quantity selection */}
                         <div className="flex flex-row items-center gap-6 my-6">
                             <div className="text-lg font-bold">Quantity:</div>
                             <div className="">
@@ -132,6 +138,7 @@ export default function ProductDetail({ product }) {
                                 </button>
                             </div>
                         </div>
+                        {/* Product Call to Actions (Buy Now or Add to Cart) */}
                         <div className="flex flex-row items-center gap-12 py-4">
                             <div>
                                 <button className="bg-primary hover:bg-orange-600 rounded-md text-white font-semibold py-2 px-8">
@@ -147,6 +154,7 @@ export default function ProductDetail({ product }) {
                         </div>
                     </div>
                 </div>
+                {/* Product Detailed description */}
                 <div className="py-6">
                     <h2 className="text-2xl font-semibold py-2">Description</h2>
                     <p className="text-gray-800">
@@ -183,6 +191,7 @@ export default function ProductDetail({ product }) {
     );
 }
 
+// NextJs function for generating static pages
 export async function getStaticPaths() {
     const products = require("../../data/products.json");
     const paths = products.products.map((product) => ({
@@ -194,6 +203,7 @@ export async function getStaticPaths() {
     };
 }
 
+// NextJs function for fetching data required to generate pages
 export async function getStaticProps({ params }) {
     const slug = params.slug;
     const products = require("../../data/products.json");
