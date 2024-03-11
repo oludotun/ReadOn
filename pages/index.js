@@ -4,11 +4,7 @@ import Hero from "@/components/Hero";
 import ProductListTitle from "@/components/ProductListTitle";
 import ProductList from "@/components/ProductList";
 
-export default function Page({ products }) {
-    const topDeals = products.filter((product) => product.topDeals == true);
-    const featured = products.filter((product) => product.featured == true);
-    const newRelease = products.sort((a, b) => a.id - b.id).slice(0, 4);
-
+export default function Page({ topDeals, featured, newRelease }) {
     return (
         <Layout>
             <Head>
@@ -36,9 +32,18 @@ export default function Page({ products }) {
 // NextJs function for fetching data required to generate pages
 export async function getStaticProps() {
     const products = require("../data/products.json");
+    const topDeals = products.products.filter(
+        (product) => product.topDeals == true
+    );
+    const featured = products.products.filter(
+        (product) => product.featured == true
+    );
+    const newRelease = products.products
+        .sort((a, b) => a.id - b.id)
+        .slice(0, 4);
 
     return {
-        props: { products: products.products },
+        props: { topDeals, featured, newRelease },
         // Incremental Static Regeneration
         // revalidate: 10, // In seconds
     };

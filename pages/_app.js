@@ -6,7 +6,7 @@ const MyApp = ({ Component, pageProps }) => {
         <>
             {/* Setting some page metadata */}
             <Head>
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
                 <meta
                     property="og:url"
                     content="http://up2271435.students.portsmouthuni.ac.uk/wp1"
@@ -25,7 +25,7 @@ const MyApp = ({ Component, pageProps }) => {
 
                 <meta name="author" content="UP2271435" />
 
-                <link rel="icon" href="/favicon.png" />
+                <link rel="icon" href="/wp1/favicon.ico" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
