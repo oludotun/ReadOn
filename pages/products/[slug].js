@@ -11,9 +11,9 @@ function classNames(...classes) {
 export default function ProductDetail({ product }) {
     const images = [
         { id: 1, src: product.imageSrc },
-        { id: 2, src: "/images/unfear.jpg" },
-        { id: 3, src: "/images/the-role-of-nutrition.png" },
-        { id: 4, src: "/images/the-long-firm.jpg" },
+        { id: 2, src: "/wp1/images/unfear.jpg" },
+        { id: 3, src: "/wp1/images/the-role-of-nutrition.png" },
+        { id: 4, src: "/wp1/images/the-long-firm.jpg" },
     ];
     const [activeImage, setActiveImage] = useState(images[0]);
     const [quantity, setQuantity] = useState(1);
