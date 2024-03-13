@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
             siteMetadata: {
                 title: `ReadOn Bookstore`,
                 description: `An online bookstore with wide varieties of collections`,
-                author: `Oludotun Ebiekuraju`,
+                author: `up2271435`,
                 siteUrl: `http://up2271435.students.portsmouthuni.ac.uk/wp1`,
             },
         },
